@@ -1,0 +1,21 @@
+<div id="category">
+  <br><br><br>
+  <ul>-Menu-</ul>
+  <ul>
+      <a href=../member/regist.php>Signup</a>
+  </ul>
+  <ul> 
+    <li>
+      <a href="{{ constant('shopping\\Bootstrap::ENTRY_URL') }}list.php">All</a>
+    </li>
+    {% for value in cateArr %}
+    <li>
+      <a href="{{ constant('shopping\\Bootstrap::ENTRY_URL') }}list.php?ctg_id={{value.ctg_id}}">{{ value.category_name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <form method="POST" action="search.php">
+    <input type="text" name="search" value="" style="width: 55.97728px;margin-left: 35px;">
+    <input type="submit" value="search" style="margin-left: 35px;padding-left: 2px;padding-right: 2px;padding-bottom: 1px;">
+  </form>
+</div>
