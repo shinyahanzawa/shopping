@@ -1,0 +1,16 @@
+<div id="header">
+    <form method="post" action="login_check.php" style="margin-left: -70;">
+      {% if login_err is defined %}
+      {{login_err}}
+      {% endif %}
+      {% if logout_msg is defined %}
+      {{logout_msg}}
+      {% endif %}
+      <br>
+      mail
+      <input type="text" name="email" value="" style="width: 105.97728000000001px;">
+      pass
+      <input type="text" name="password" value="" style="width: 105.97728000000001px;">
+      <input type="submit" name="login" style="margin-left: 255px;padding-bottom: 1px;" value="login">
+    </form>
+</div>
