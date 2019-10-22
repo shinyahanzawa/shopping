@@ -1,6 +1,1 @@
 # shopping
-
-
-hello
-
-thanks
