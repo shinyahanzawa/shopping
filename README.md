@@ -1,3 +1,3 @@
 # shopping
 
-ok
+NG
